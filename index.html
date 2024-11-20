@@ -27,8 +27,9 @@
           colors: {
             'primary-color': '#E6533C',
             'primary-title': '#FFFFFF',
-            'primary-article': '#ffffff80',
             'primary-input': '#ffffff99',
+            'primary-article': '#8C8C8C',
+            'primary-bg': '#191919'
           }
         }
       }
@@ -49,7 +50,7 @@
 
 <body>
   <!-- Header section start -->
-  <header class="bg-gradient-to-r from-[#111] to-[#303030] md:pt-8">
+  <header class="bg-gradient-to-r from-[#111] to-[#383838] md:pt-8">
     <section class="container mx-auto">
       <!-- navbar part -->
       <div class="px-4 md:px-2 lg:px-0">
@@ -125,7 +126,35 @@
   <!-- Main section end -->
 
   <!-- Footer section start -->
-  <footer></footer>
+  <footer class="bg-primary-bg">
+    <section class="footer container mx-auto text-base-content py-8 md:py-10 items-center flex flex-col md:flex-col lg:felx-row px-6 md:px-2 lg:px-0">
+      <div class="md:w-[443px] flex-1">
+        <h2 class="text-primary-color text-7xl font-inter font-extrabold italic leading-10 capitalize mb-5">
+        fitness</h2>
+      <p class="font-inter text-sm leading-7 font-normal tracking-[0.3px] text-primary-article">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
+    </div>
+    <div class="flex justify-between md:justify-around lg:justify-between flex-1 w-full">
+      <ul>
+        <li class="text-primary-title text-3xl font-bold font-inter leading-9 mb-10">Services</li>
+        <li class="text-lg md:text-2xl font-normal font-inter leading-7 text-primary-article mb-5">Branding</li>
+        <li class="text-lg md:text-2xl font-normal font-inter leading-7 text-primary-article mb-5">Design</li>
+        <li class="text-lg md:text-2xl font-normal font-inter leading-7 text-primary-article mb-5">Marketing</li>
+        <li class="text-lg md:text-2xl font-normal font-inter leading-7 text-primary-article mb-5">Advertisement</li>
+      </ul>
+      <ul>
+        <li class="text-primary-title text-3xl font-bold font-inter leading-9 mb-10">Company</li>
+        <li class="text-lg md:text-2xl font-normal font-inter leading-7 text-primary-article mb-5">About us</li>
+        <li class="text-lg md:text-2xl font-normal font-inter leading-7 text-primary-article mb-5">Contact</li>
+        <li class="text-lg md:text-2xl font-normal font-inter leading-7 text-primary-article mb-5">Jobs</li>
+        <li class="text-lg md:text-2xl font-normal font-inter leading-7 text-primary-article mb-5">Press kit</li>
+      </ul>
+    </div>
+    <!-- Footer end -->
+    <div class="border-t-2 border-primary-article w-full">
+        <p class="text-primary-article text-lg font-inter leading-6 font-normal pt-8 mx-auto tracking-[0.3px]">All right reserved @Fitness 2024</p>
+    </div>
+  </section>
+  </footer>
   <!-- Footer section end -->
 </body>
 
