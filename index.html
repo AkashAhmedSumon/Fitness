@@ -1,45 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fitness</title>
-    <!-- tailwind & daisyUI link here -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness</title>
+  <!-- tailwind & daisyUI link here -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- google font style link here -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Satisfy&display=swap" rel="stylesheet">
+  <!-- Google font icon link here -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Default css style -->
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                'primary-color'     : '#E6533C',
-                'primary-title'     : '#FFFFFF',
-                'primary-article'   : '#ffffff80',
-                'primary-input'     : '#ffffff99',
-              }
-            }
+  <!-- google font style link here -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Satisfy&display=swap"
+    rel="stylesheet">
+
+  <!-- Default css style -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'primary-color': '#E6533C',
+            'primary-title': '#FFFFFF',
+            'primary-article': '#ffffff80',
+            'primary-input': '#ffffff99',
           }
         }
-      </script>
+      }
+    }
+  </script>
 
-      <!-- Google font connect here -->
-       <style>
-        .font-inter{
-            font-family: "Inter", sans-serif;
-        }
-        .font-satisfy{
-            font-family: "Satisfy", cursive;
-        }
-       </style>
+  <!-- Google font connect here -->
+  <style>
+    .font-inter {
+      font-family: "Inter", sans-serif;
+    }
+
+    .font-satisfy {
+      font-family: "Satisfy", cursive;
+    }
+  </style>
 </head>
+
 <body>
-    
+  <!-- Header section start -->
+  <header class="bg-gradient-to-r from-[#111] to-[#303030] md:pt-8">
+    <section class="container mx-auto">
+      <!-- navbar part -->
+      <div class="px-4 md:px-2 lg:px-0">
+        <div class="navbar text-base-100 justify-between">
+          <div class="navbar-start w-full md:w-2/4 md:justify-start justify-between">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </div>
+              <ul tabindex="0" class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                <li><a class="text-base text-primary-footer font-semibold font-inter capitalize rounded-[48px]">home</a></li>
+                <li><a class="text-base text-primary-footer font-normal font-inter capitalize">service</a></li>
+                <li><a class="text-base text-primary-footer font-normal font-inter capitalize">contact</a></li>
+                <li><a class="text-base text-primary-footer font-normal font-inter capitalize">about</a></li>
+              </ul>
+            </div>
+            <h2 class="text-primary-color md:text-4xl text-xl font-inter font-extrabold italic leading-10 capitalize">
+              fitness</h2>
+          </div>
+          <div class="navbar-end hidden md:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a class="text-base text-primary-footer font-semibold font-inter capitalize bg-primary-color rounded-[48px]">home</a></li>
+              <li><a class="text-base text-primary-footer font-normal font-inter capitalize">service</a></li>
+              <li><a class="text-base text-primary-footer font-normal font-inter capitalize">contact</a></li>
+              <li><a class="text-base text-primary-footer font-normal font-inter capitalize">about</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- navbar end -->
+
+
+    <!-- Banner section start -->
+    <div class="flex flex-col md:flex-col lg:flex-row justify-between items-center px-8 md:px-2 lg:px-0">
+      <div class="space-y-7 my-6 lg:my-0">
+        <h2 class="text-primary-title text-3xl md:text-7xl font-black leading-10 font-inter">Get body in <br>
+          <span class="font-satisfy font-normal">shape</span> & stay <br>
+          healthy</h2>
+          <p class="text-base font-inter font-normal leading-6 text-primary-article md:w-[520px]">A huge selection of health and fitness content, healthy recipes and transformation stories to help you get fit and stay fit!</p>
+          <div class="flex">
+            <button class="btn btn-sm md:btn-md md:py-4 md:px-10 rounded-[42px] bg-primary-color capitalize text-primary-title border-primary-color mr-5 hover:bg-transparent">Join Club Now!</button>
+          <button class="btn btn-sm md:btn-md md:py-4 md:px-10 rounded-[42px] capitalize text-primary-title bg-transparent border-primary-title hover:bg-primary-color hover:border-primary-color ">Download App</button>
+          </div>
+      </div>
+      <div class="relative">
+        <div class="absolute rounded-xl bg-[#ffffff1a] border border-[#ffffff1a] backdrop-blur-[10px] px-3 py-2 md:p-2 top-20 right-0 md:top-24 md:-right-8 lg:right-2">
+          <h2 class="font-inter text-base md:text-[30px] text-primary-title font-black md:leading-10 tracking-[1px]">500+</h2>
+          <p class="text-primary-article capitalize text-[9px] md:text-sm font-inter leading-5 font-normal">free workout video</p>
+
+        </div>
+        <img class="" src="images/Images 2.png" alt="">
+        <div class="absolute hidden md:block lg:top-60 lg:left-10"><i class="fa-solid fa-caret-right text-primary-title"></i></div>
+        <div class="absolute rounded-xl bg-[#ffffff1a] border border-[#ffffff1a] backdrop-blur-[10px] p-3 md:py-3 md:px-5 bottom-44 left-4 md:bottom-36 md:-left-0 lg:left-2 flex gap-4 items-center">
+          <div class="w-10 h-10 bg-primary-color rounded-full"></div>
+          <div>
+            <h2 class="font-inter text-lg md:text-2xl text-primary-title font-black md:leading-6 tracking-[1px]">350+</h2>
+          <p class="text-primary-article capitalize text-[9px] md:text-sm font-inter leading-5 font-normal">video tutorial</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Banner section end -->
+    </section>
+  </header>
+  <!-- Header section End -->
+
+
+  <!-- Main section start -->
+  <main></main>
+  <!-- Main section end -->
+
+  <!-- Footer section start -->
+  <footer></footer>
+  <!-- Footer section end -->
 </body>
+
 </html>
